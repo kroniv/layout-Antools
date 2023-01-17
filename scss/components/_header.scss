@@ -1,0 +1,74 @@
+.header{
+    padding-top: 26px;
+
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__logo-link{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 48px;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        gap: 42px;
+    }
+
+    &__item:nth-child(2){
+        @include font-desc;
+        line-height: 24px;
+        cursor: pointer;
+        &::after{
+            content: url(../image/svg/arrow-down.svg);
+        }
+    }
+    
+    &__link{
+        @include font-desc;
+        line-height: 24px;
+    }
+}
+
+.sub-menu{
+    &__list{
+        display: none;
+        margin-top: 20px;
+        position: absolute; 
+    }
+    
+    &__link{
+        @include font-desc;
+    }
+}
+
+.auth{
+    display: flex;
+    align-items: center;
+
+    &__login-link{
+        @include font-desc;
+        line-height: 24px;
+    }
+
+    &__sign-up{
+        margin-left: 41px;
+    }
+
+    &__sign-up-link{
+        @include font-btn;
+        background: #FF6E30;
+        padding: 12px 28px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,39 @@
+.brand{
+    margin-bottom: 200px;
+    
+    &__title{
+        @include font-title;
+        font-size: 24px;
+        line-height: 36px;
+
+        text-align: center;
+        margin: 55px 0;
+    }
+
+    &__inner{
+        position: relative;
+        height: 253px;
+        backdrop-filter: blur(25px);
+        border-radius: 25px;
+        background: linear-gradient(0deg, rgba(44, 53, 61, 0.2), rgba(44, 53, 61, 0.2)),
+        linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+        border: 2px solid;
+        border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+        overflow: hidden;
+    }
+
+    &__mask{
+        position: absolute;
+        background: rgba(255, 72, 66, 0.4);
+        filter: blur(50px);
+        width: 159px;
+        height: 159px;
+        transform: translate(-84px, -86px);
+    }
+
+    &__bottom{
+        display: flex;
+        margin-left: 82px;
+        gap: 107px;
+    }
+}

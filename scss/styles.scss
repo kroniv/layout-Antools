@@ -1,0 +1,33 @@
+@import "vars";
+@import "reset";
+@import "fonts";
+@import "iconsfont.css";
+
+@import "components/header";
+@import "components/forms";
+@import "components/intro";
+@import "components/popular";
+@import "components/card";
+@import "components/brand";
+@import "components/newcomer";
+@import "components/splide";
+@import "components/join";
+@import "components/footer";
+
+body {
+    background: $background-color;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        opacity: .75;
+    }
+}
+
+.wrapper{
+    max-width: 1224px;
+    margin: 0 auto;
+}
+

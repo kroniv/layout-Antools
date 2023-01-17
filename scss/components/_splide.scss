@@ -1,0 +1,90 @@
+.splide{
+    margin-bottom: 250px;
+    
+    &__slide{
+        img{
+            margin-left: 145px;
+        }
+    }
+    
+    &__arrow svg{
+        fill:rgba(255, 110, 48, 1);
+    }
+    
+    &__pagination__page.is-active{
+        background: rgba(255, 110, 48, 1);
+    }
+    
+    &__pagination__page{
+        width: 44px;
+        background: #283036;
+        border-radius: 4px;
+        &:hover{
+            background: rgba(255, 110, 48, 1);
+        }
+    }
+    &__slide{
+        display: flex;
+    }
+    
+    &__item{
+        position: relative;
+    }
+    
+    &__item-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url(../image/gallery-bottom.png);
+        width: 267px;
+        height: 93px;
+        transform: translateY(-30px);
+    }
+    
+    &__item-title{
+        @include font-card-title;
+        font-size: 26px;
+        line-height: 39px;
+        letter-spacing: 0.015em;
+        margin-top: 10px;
+        margin-left: 23px;
+        margin-bottom: 2px;
+    }
+    
+    &__item-subtitle{
+        @include font-desc;
+        line-height: 24px;
+        margin-left: 23px;
+    }
+    
+    &__text-back{
+        position: absolute;
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 250px;
+        line-height: 320px;
+        background: linear-gradient(188.88deg, rgba(252, 252, 252, 0.02) 20.34%, rgba(255, 255, 255, 0.5) 155.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotate(19.17deg);
+    }
+    
+    &__desc{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.015em;
+        color: rgba(255, 255, 255, 0.78);
+    
+        margin-top: 100px;
+        margin-left: 73px;
+        max-width: 393px;    
+    }
+}
+
+.splide__pagination splide__pagination--ltr{
+        margin-top: 100px;
+}

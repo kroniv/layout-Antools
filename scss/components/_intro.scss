@@ -1,0 +1,38 @@
+.intro{
+    padding-top: 104px;
+    margin-bottom: 200px;
+
+    &__title{
+        @include font-title;
+        font-size: 50px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 30px;
+    }
+
+    &__desc{
+        @include font-desc;
+        max-width: 487px;
+        margin-bottom: 60px;
+    }
+}
+
+.dot{
+    color: rgba(255, 110, 48, 1)
+}
+
+.social-icon{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.intro-dev{
+    position: relative;
+    width: 589px;
+    
+    &-img{
+        position: absolute;
+        transform: translate(715px, -80px);
+    }
+}

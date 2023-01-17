@@ -1,0 +1,36 @@
+.popular{
+    &__title{
+        @include font-title;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__desc{
+        @include font-desc;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 100px 25px; 
+        margin-bottom: 100px;
+    }
+
+    &__more{
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    &__more-link{
+        @include font-title;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FF6E30;
+
+        padding: 17px 38px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px; 
+    }
+}

@@ -1,0 +1,174 @@
+.card{
+    
+    padding: 33px;
+    width: 392px;
+
+    &__blur{
+        position: relative;
+        img{
+            position: absolute;
+            transform: translate(-33px, -33px);
+            display: none;
+            z-index: -1;
+            
+        }
+    }
+
+    &__top{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__title{
+        @include font-card-title;
+    }
+    
+    &__type{
+        @include font-card-type;
+    }
+
+    &__desc{
+        @include font-desc;
+        margin-bottom: 30px;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 12px;
+    }
+
+    &__link{
+        @include font-btn;
+        color: rgba(255, 255, 255, 0.55);
+        padding: 9px 35px;
+        border-radius: 8px;
+    }
+
+    &:hover{
+        // background: rgba(40, 48, 54, 0.6);
+        // background: linear-gradient(0deg, rgba(40, 48, 54, 0.6), rgba(40, 48, 54, 0.6)),
+        // linear-gradient(118.49deg, rgba(255, 255, 255, 0.08) -2.11%, rgba(255, 255, 255, 0) 28.55%, rgba(255, 255, 255, 0.05) 44.69%, rgba(255, 255, 255, 0) 96.78%);
+        // backdrop-filter: blur(25px);
+        // border-radius: 15px;
+        transform: translateY(-20px);
+
+
+        @include animation;
+
+    }
+
+    &:hover &__blur{
+        @include animation;
+        img{
+            display: block;
+        }
+    }
+
+    &:hover &__title{
+        color: white;
+        @include animation;
+    }
+
+    &:hover &__type{
+        color: #FFA537;
+        @include animation;
+    }
+
+    &:hover &__desc{
+        color: rgba(255, 255, 255, 0.78);
+        @include animation;
+    }
+
+    &:hover &__link{
+        background: #FF6E30;
+        color: white;
+        @include animation;
+    
+    }
+}
+
+.card_small{
+   width: 288px;
+   padding: 28px 22px;
+
+   &:hover{
+        transform: translateY(-20px);
+        @include animation;
+   }
+
+   &:hover .card__blur{
+    @include animation;
+        img{
+            display: block;
+        }
+    }
+
+    &:hover .card__title{
+        color: white;
+        @include animation;
+    }
+
+    &:hover .card__type{
+        color: #FFA537;
+        @include animation;
+    }
+
+    &:hover .card__desc_small{
+        color: rgba(255, 255, 255, 0.78);
+        @include animation;
+    }
+
+    &:hover .card__link{
+        background: #FF6E30;
+        color: white;
+        @include animation;
+
+    }
+}
+
+// card modification
+
+.card__desc_small{
+    @include font-desc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+// iconsfont styles
+
+.like{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 11px 8px 8px 8px;
+    -webkit-tap-highlight-color: transparent;   
+}
+
+._icon-heart{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.heart_active{
+    color: #FD3B41;
+}
+
+.favorite{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+._icon-folder{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.38);
+}
+.folder_active{
+    color: #ECB22E;
+}

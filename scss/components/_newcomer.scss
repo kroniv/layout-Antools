@@ -1,0 +1,40 @@
+.newcomer{
+    
+    &__inner{
+        display: flex;
+        margin-bottom: 200px;
+    }
+
+    &__title{
+        @include font-title;
+        margin-bottom: 30px;
+    }
+
+    &__more-link{
+        max-width: 118px;
+        @include font-title;
+        font-size: 18px;
+        line-height: 27px;
+
+        background: #FF6E30;
+        border-radius: 8px;
+        width: 198px;
+        padding: 16px 40px;
+    }
+
+    &__desc{
+        @include font-desc;
+        margin-bottom: 60px;
+        max-width: 427px;
+    }
+
+    &__left{
+        margin-right: 197px;
+    }
+
+    &__right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px 24px; 
+    }
+}
